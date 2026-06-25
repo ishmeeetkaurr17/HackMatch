@@ -1,0 +1,352 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f8fafc;
+    color:#0f172a;
+}
+
+/* Navbar */
+
+nav{
+    background:white;
+    padding:18px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-bottom:1px solid #e2e8f0;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#f97316;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#334155;
+}
+
+/* Hero */
+
+.hero{
+    padding:60px 8%;
+}
+
+.hero-card{
+    max-width:900px;
+    margin:auto;
+    background:white;
+    padding:50px;
+    border-radius:16px;
+    text-align:center;
+    border:1px solid #e2e8f0;
+}
+
+.hero-card h1{
+    font-size:3rem;
+    margin-bottom:20px;
+}
+
+.hero-card p{
+    color:#64748b;
+    line-height:1.8;
+    margin-bottom:25px;
+}
+
+#exploreBtn{
+    background:#f97316;
+    color:white;
+    border:none;
+    padding:12px 24px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+/* Stats */
+
+.stats{
+    display:flex;
+    justify-content:center;
+    gap:60px;
+    margin-bottom:50px;
+}
+
+.stat-box{
+    text-align:center;
+}
+
+.stat-box h2{
+    color:#f97316;
+}
+
+.stat-box p{
+    color:#64748b;
+}
+
+/* Students */
+
+.students,
+.teams{
+    padding:50px 8%;
+}
+
+.students h2,
+.teams h2{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+#searchInput{
+    display:block;
+    width:100%;
+    max-width:500px;
+    margin:0 auto 30px;
+    padding:12px;
+    border:1px solid #cbd5e1;
+    border-radius:8px;
+}
+
+.student-container,
+.team-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+}
+
+.student-card,
+.team-card{
+    width:320px;
+    background:white;
+    border:1px solid #e2e8f0;
+    border-radius:12px;
+    padding:20px;
+}
+
+.student-card p,
+.team-card p{
+    margin-top:10px;
+}
+
+.match-score{
+    color:#16a34a;
+    font-weight:bold;
+}
+
+.connect-btn,
+.join-btn{
+    width:100%;
+    margin-top:15px;
+    padding:10px;
+    background:#f97316;
+    color:white;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+/* Create Team */
+.create-profile{
+    max-width:700px;
+    margin:50px auto;
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    border:1px solid #e2e8f0;
+}
+
+.create-profile h2{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.create-profile input{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border:1px solid #cbd5e1;
+    border-radius:8px;
+}
+
+#createProfileBtn{
+    width:100%;
+    padding:12px;
+    background:#f97316;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+#profileMessage{
+    text-align:center;
+    margin-top:15px;
+    color:#16a34a;
+}
+
+.create-team{
+    max-width:700px;
+    margin:50px auto;
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    border:1px solid #e2e8f0;
+}
+
+.create-team h2{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.create-team input{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border:1px solid #cbd5e1;
+    border-radius:8px;
+}
+
+#createTeamBtn{
+    width:100%;
+    padding:12px;
+    background:#f97316;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+#teamMessage{
+    text-align:center;
+    margin-top:15px;
+    color:green;
+}
+
+/* Footer */
+
+footer{
+    margin-top:50px;
+    background:white;
+    padding:30px;
+    text-align:center;
+    border-top:1px solid #e2e8f0;
+}
+
+footer h3{
+    color:#f97316;
+}
+
+footer p{
+    color:#64748b;
+    margin-top:10px;
+}
+
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .hero-card h1{
+        font-size:2rem;
+    }
+
+    .stats{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .student-card,
+    .team-card{
+        width:100%;
+    }
+}
+
+/* LOGIN PAGE */
+
+.login-container{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+.login-card{
+    width:100%;
+    max-width:450px;
+    background:white;
+    padding:40px;
+    border-radius:16px;
+    border:1px solid #e2e8f0;
+    text-align:center;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+.login-card h1{
+    color:#f97316;
+    margin-bottom:10px;
+    font-size:3rem;
+}
+
+.login-card p{
+    color:#64748b;
+    margin-bottom:20px;
+}
+
+.login-card input{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border:1px solid #cbd5e1;
+    border-radius:8px;
+    outline:none;
+}
+
+.login-card input:focus{
+    border:2px solid #f97316;
+}
+
+#loginBtn{
+    width:100%;
+    padding:12px;
+    background:#f97316;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    margin-top:10px;
+}
+
+.signup-text{
+    margin-top:20px;
+}
+
+.signup-text a{
+    color:#f97316;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.badge{
+    display:inline-block;
+    background:#fff7ed;
+    color:#ea580c;
+    padding:8px 14px;
+    border-radius:20px;
+    font-size:14px;
+    margin-bottom:20px;
+}

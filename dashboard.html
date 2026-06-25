@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HackMatch Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+
+    <nav>
+        <div class="logo">HackMatch</div>
+
+        <ul>
+            <li><a href="#students">Students</a></li>
+            <li><a href="#teams">Teams</a></li>
+            <li><a href="#create-team">Create Team</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero -->
+
+    <section class="hero">
+
+        <div class="hero-card">
+
+            <h1>Find Your Perfect Hackathon Team</h1>
+
+            <p>
+                Connect with students, discover active teams,
+                and collaborate on your next big hackathon idea.
+            </p>
+
+            <button id="exploreBtn">
+                Explore Students
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- Stats -->
+
+    <section class="stats">
+
+        <div class="stat-box">
+            <h2>500+</h2>
+            <p>Students</p>
+        </div>
+
+        <div class="stat-box">
+            <h2>120+</h2>
+            <p>Teams Formed</p>
+        </div>
+
+        <div class="stat-box">
+            <h2>35+</h2>
+            <p>Hackathons</p>
+        </div>
+
+    </section>
+
+    <!-- Students -->
+     <section class="create-profile">
+
+    <h2>Create Your Profile</h2>
+
+    <input
+        type="text"
+        id="studentName"
+        placeholder="Your Name"
+    >
+    <input
+    type="text"
+    id="teamLeader"
+    placeholder="Team Leader"
+/>
+    <input
+        type="text"
+        id="studentSkills"
+        placeholder="Skills (HTML, CSS, React)"
+    >
+
+    <input
+        type="text"
+        id="studentLookingFor"
+        placeholder="Looking For"
+    >
+
+    <button id="createProfileBtn">
+        Create Profile
+    </button>
+
+    <p id="profileMessage"></p>
+
+</section>
+
+    <section class="students" id="students">
+
+        <h2>Recommended Students</h2>
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search by skill..."
+        >
+
+        <div class="student-container">
+
+            <div class="student-card">
+
+                <h3>Ishmeet Kaur</h3>
+
+                <p><strong>Skills:</strong> HTML, CSS, Canva</p>
+
+                <p><strong>Looking For:</strong> DSA, React</p>
+
+                <p><strong>Interested In:</strong> SIH, WeForShe</p>
+
+                <p class="match-score">85% Match</p>
+
+                <button class="connect-btn">
+                    Connect
+                </button>
+
+            </div>
+
+            <div class="student-card">
+
+                <h3>Prabhvir Singh</h3>
+
+                <p><strong>Skills:</strong> DSA, C++</p>
+
+                <p><strong>Looking For:</strong> Frontend</p>
+
+                <p><strong>Interested In:</strong> HackIndia</p>
+
+                <p class="match-score">92% Match</p>
+
+                <button class="connect-btn">
+                    Connect
+                </button>
+
+            </div>
+
+            <div class="student-card">
+
+                <h3>Jasnoor Kaur</h3>
+
+                <p><strong>Skills:</strong> UI/UX, Figma</p>
+
+                <p><strong>Looking For:</strong> Web Developer</p>
+
+                <p><strong>Interested In:</strong> Designathon</p>
+
+                <p class="match-score">88% Match</p>
+
+                <button class="connect-btn">
+                    Connect
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Teams -->
+
+    <section class="teams" id="teams">
+
+        <h2>Open Teams</h2>
+
+        <div class="team-container" id="teamContainer">
+
+            <div class="team-card">
+
+                <h3>AI Healthcare</h3>
+
+                <p>Need:</p>
+
+                <ul>
+                    <li>Frontend Developer</li>
+                    <li>UI/UX Designer</li>
+                </ul>
+
+                <button class="join-btn">
+                    Join Team
+                </button>
+
+            </div>
+
+            <div class="team-card">
+
+                <h3>Smart Campus App</h3>
+
+                <p>Need:</p>
+
+                <ul>
+                    <li>Backend Developer</li>
+                    <li>Flutter Developer</li>
+                </ul>
+
+                <button class="join-btn">
+                    Join Team
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Create Team -->
+
+    <section class="create-team" id="create-team">
+
+        <h2>Create a Team</h2>
+
+        <input
+            type="text"
+            placeholder="Team Name"
+            id="teamName"
+        >
+
+        <input
+            type="text"
+            placeholder="Skills Needed"
+            id="teamSkills"
+        >
+
+        <button id="createTeamBtn">
+            Create Team
+        </button>
+
+        <p id="teamMessage"></p>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <h3>HackMatch</h3>
+
+        <p>
+            Helping students build stronger hackathon teams.
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
