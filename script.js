@@ -126,7 +126,7 @@ document.getElementById("teamLeader").value;
 async function loadTeams(){
 
     const response =
-    await fetch("http://localhost:3000/teams");
+    await fetch("https://hackmatch-albb.onrender.com/teams");
 
     const teams =
     await response.json();
