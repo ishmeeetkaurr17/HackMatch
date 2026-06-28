@@ -99,7 +99,7 @@ document.getElementById("teamLeader").value;
         }
 
         const response = await fetch(
-            "http://localhost:3000/teams",
+            "https://hackmatch-albb.onrender.com",
             {
                 method:"POST",
                 headers:{
